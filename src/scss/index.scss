@@ -1,0 +1,88 @@
+@import 'variables';
+
+body{
+  display:flex;
+  justify-content: center;
+  font-family:Arial;
+}
+
+.title{
+  margin-bottom: 15px;
+}
+
+.btn_submit{
+  cursor: pointer;
+  border-radius: 10px;
+  border:1px solid black;
+  background:white;
+  height:26px;
+}
+
+.add-products{
+  padding-bottom:30px;
+  border-bottom:2px solid black;
+
+  &__form{
+    display:flex;
+    align-items: flex-end
+  }
+
+  &__input{
+    margin-right: 10px;
+    margin-top: 5px;
+    height:26px;
+    box-sizing: border-box;
+
+    &_price{
+      width:65px;
+    }
+  }
+
+  &__label{
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+.cart-table{
+  border-collapse: collapse;
+
+  th{
+    background:#cdcdcd;
+  }
+
+  tr:nth-of-type(odd) td{
+    background:#ededed;
+  }
+
+  &__cell{
+    padding:10px;
+    text-align: left;
+    border:1px solid black;
+
+    &_product{
+      width:150px;
+    }
+
+    &_price{
+      width:60px;
+    }
+
+    &_discount{
+      width:180px;
+    }
+  }
+}
+
+.cart-discount{
+  margin-top:15px;
+
+  &__count{
+    width:50px;
+    margin:0 5px;
+  }
+
+  &__submit{
+    margin-left: 10px;
+  }
+}
